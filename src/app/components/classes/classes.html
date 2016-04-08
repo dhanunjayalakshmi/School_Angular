@@ -1,0 +1,26 @@
+<div class="container">
+
+
+  <div class="jumbotron text-center">
+    <h1>Welcome To CodeAstra</h1>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-6 col-md-3" ng-repeat="classes in cc.classResponse.klasses">
+      <div class="thumbnail" ui-sref="sections({id: classes.id})">
+        <div class="caption">
+          <a href=""><h3>{{ classes.name }}</h3</a>
+
+          <!-- <p><a ng-href="{{awesomeThing.url}}">{{ awesomeThing.url }}</a></p> -->
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-3">
+      <div class="thumbnail">
+        <div class="caption">
+          <span class="glyphicon glyphicon-plus-sign center-block" aria-hidden="true"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -3,10 +3,10 @@
 
   angular
     .module('school')
-    .controller('MainController', MainController);
+    .controller('ClassesController', ClassesController);
 
   /** @ngInject */
-  function MainController($timeout, webDevTec, toastr, $resource) {
+  function ClassesController($timeout, webDevTec, toastr, $resource) {
     var vm = this;
 
     vm.getClasses = function() {
@@ -20,5 +20,5 @@
       // });
       // console.log(vm.classResponse);
     }();
-  };
+  }
 })();
