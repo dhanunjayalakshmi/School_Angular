@@ -23,11 +23,11 @@
         controllerAs: 'sc'
       })
       .state('students', {
-        url: '/classes/:klass_id/sections/:id/students',
-        templateUrl: 'app/components/students/students.html',
-        controller: 'StudentsController',
-        controllerAs: 'st'
-      })
+         url: '/classes/:klass_id/sections/:id/students',
+         templateUrl: 'app/components/students/students.html',
+         controller: 'StudentsController',
+         controllerAs: 'st'
+       })
   }
 
 })();
