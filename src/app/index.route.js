@@ -28,6 +28,12 @@
          controller: 'StudentsController',
          controllerAs: 'st'
        })
+       .state('studentDetails', {
+         url: '/classes/:klass_id/sections/:section_id/students/:id',
+         templateUrl: 'app/components/studentDetails/studentDetails.html',
+         controller: 'StudentDetailsController',
+         controllerAs: 'sd'
+       })
   }
 
 })();

@@ -7,11 +7,10 @@
 
   <div class="row">
     <div class="col-sm-6 col-md-3" ng-repeat="students in st.studentResponse.students">
-      <div class="thumbnail">
+      <div class="thumbnail" ui-sref="studentDetails({klass_id: students.klass_id, section_id: students.section_id, id: students.id})">
         <div class="caption">
-          <a href=""><h3>{{ students.name }}</h3</a>
-
-          <!-- <p><a ng-href="{{awesomeThing.url}}">{{ awesomeThing.url }}</a></p> -->
+          <h4>Roll.No: {{ students.roll_number }}</h4>
+          <h4>Name: {{ students.name }}</h4>
         </div>
       </div>
     </div>
