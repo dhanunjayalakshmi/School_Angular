@@ -16,12 +16,6 @@
         controller: 'ClassesController',
         controllerAs: 'cc'
       })
-      // .state('addClass', {
-      //   url: '/new',
-      //   templateUrl: 'app/components/classes/addClass.html',
-      //   controller: 'AddClassController',
-      //   controllerAs: 'ac'
-      // })
       .state('sections', {
         url: '/classes/:id/sections',
         templateUrl: 'app/components/sections/sections.html',
